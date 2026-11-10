@@ -1,0 +1,15 @@
+name: hello
+
+on: 
+  push: 
+    branches: [develop]
+
+jobs: 
+  build: 
+    runs-on: ubuntu-lastest
+    steps: 
+        - uses: actions/checkout@v4
+
+        - name: Print the date
+          run: date
+          
